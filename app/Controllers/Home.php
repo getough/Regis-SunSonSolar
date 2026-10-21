@@ -6,6 +6,11 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        return view('home', ['title' => 'Sun Son Solar']);
+    }
+
+    public function privacy(): string
+    {
+        return view('privacy', ['title' => 'Privacy Notice']);
     }
 }
